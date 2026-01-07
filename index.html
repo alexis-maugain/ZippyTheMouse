@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="startScreen">
+      <img src="./assets/gamecontrols_popup.png" alt="" />
+      <button id="startButton">Start the game</button>
+    </div>
+
+    <div id="gameCanvas"></div>
+
+    <div id="GOVideoScreen">
+        <video id="gameOverVideo" src="assets/videos/loser.mp4" type="video/mp4" autoplay muted playsinline>
+            Your browser does not support the video tag.
+        </video>
+        <button id="restartButton" onclick="location.reload()">Menu</button>
+    </div>
+
+    <div id="WINVideoScreen">
+        <video id="winVideo" src="assets/videos/win.mp4" type="video/mp4" autoplay muted playsinline>
+            Your browser does not support the video tag.
+        </video>
+        <button id="restartButton" onclick="location.reload()">Menu</button>
+    </div>
+
+    <video id="startVideo" autoplay muted playsinline>
+      <source src="assets/videos/intro.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- <style>
+      html,
+      body {
+        background-color: rgb(32, 172, 107);
+        margin: 0;
+        padding: 0;
+        overscroll-behavior: none;
+      }
+    </style> -->
+
+    <script src="https://q5js.org/q5.js"></script>
+    <script src="https://p5play.org/v3/planck.min.js"></script>
+    <script src="https://p5play.org/v3/p5play.js"></script>
+    <script src="sketch.js"></script>
+    <script src="enemy.js"></script>
+    <script src="enemy2.js"></script>
+    <script src="scrore.js"></script>
+    <script src="boss.js"></script>
+  </body>
+</html>
